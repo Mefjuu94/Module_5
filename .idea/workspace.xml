@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Figures/Hexagon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Figures/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Figures/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Figures/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testGeometricFigureCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,36 +37,106 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2hNqAZX8Hj0BHnifO0j7CUZi5ou" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Orzi/IdeaProjects/Module_5/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.testFileExercises.executor": "Run",
+    "JUnit.testFileExercises.testPrintDirectory.executor": "Run",
+    "JUnit.testFileExercises.testPrintDirectoryMissingRecord.executor": "Run",
+    "JUnit.testFileExercises.testPrintDirectoryNoOrder.executor": "Debug",
+    "JUnit.testFileExercises.testReadFromFile.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateHexField.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateHexFieldFail.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateRectField.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateRectFieldFail.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateSquareDiameter.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateSquareDiameterFail.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateTriangleField.executor": "Run",
+    "JUnit.testGeometricFigureCase.calculateTriangleFieldFail.executor": "Run",
+    "JUnit.testGeometricFigureCase.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Orzi/IdeaProjects/Module_5/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+}]]></component>
+  <component name="RunManager" selected="JUnit.testGeometricFigureCase.calculateSquareDiameterFail">
+    <configuration name="testGeometricFigureCase.calculateHexFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateHexFieldFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeometricFigureCase.calculateRectFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateRectFieldFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeometricFigureCase.calculateSquareDiameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateSquareDiameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeometricFigureCase.calculateSquareDiameterFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateSquareDiameterFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeometricFigureCase.calculateTriangleFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateTriangleFieldFail" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateSquareDiameterFail" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateSquareDiameter" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateHexFieldFail" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateTriangleFieldFail" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateRectFieldFail" />
       </list>
     </recent_temporary>
   </component>
@@ -83,10 +158,24 @@
       <updated>1717444741258</updated>
       <workItem from="1717444742296" duration="1218000" />
       <workItem from="1717511220347" duration="2788000" />
+      <workItem from="1717515931688" duration="2533000" />
+      <workItem from="1717520481716" duration="9827000" />
+      <workItem from="1717571618710" duration="688000" />
+      <workItem from="1717589689076" duration="601000" />
+      <workItem from="1717614800694" duration="257000" />
+      <workItem from="1717680496487" duration="16000" />
+      <workItem from="1717698046230" duration="4679000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/test/testFileExercises.java" line="32">
+        <watch expression="((testFileExercises)this).testObject" language="JAVA" custom="testFileExercises" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>
