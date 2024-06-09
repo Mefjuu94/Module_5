@@ -1,3 +1,4 @@
+import java.io.File;
 import java.nio.file.Path;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -14,13 +15,21 @@ public class Main {
         System.out.println("Print all:");
         fe.printDirectory(String.valueOf(Path.of(path)));
 
-//        if (fe.writeUserInputToFile()){
-//            System.out.println("File has been Created!");
-//        }else {
-//            System.out.println("something going wrong :(");
-//        };
-
         fe.readFromFile("test/testFolder/","testFile1.txt");
+
+        System.out.println("-----------------------");
+
+        CheckIfTwoFilesAreEqual c2Files = new CheckIfTwoFilesAreEqual();
+        System.out.println(c2Files.areTextFilesEqual("test/testFolder/testFile1.txt","test/testFolder/testFile2notEqualTo1.txt")); // false
+        System.out.println(c2Files.areTextFilesEqual("test/testFolder/testFile1.txt","test/testFolder/testFile3equalsto1.txt")); // true
+
+        String filepath = "test/testFolder/filetoInvert.txt";
+
+        InvertContentFile icf = new InvertContentFile();
+        System.out.println(icf.invertFile(filepath));
+
+//        System.out.println("*********delete files to see if test going well**************");
+//        icf.deleteFiles("test/testFolder/TestFolder1/");
 
     }
 }

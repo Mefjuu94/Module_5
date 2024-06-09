@@ -133,6 +133,6 @@ public class FileExercises {
     }
 
     //powinno sie zapisac w paru liniach poniewaz co czwarte slowo jest dzielone wg matody
-    //ale to jeszcze nie koniec! bo trzeba dio tego zreobic testy!
+
 
 }

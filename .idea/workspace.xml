@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Figures/Hexagon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Figures/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Figures/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Figures/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testGeometricFigureCase.java" afterDir="false" />
+    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
+      <change afterPath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InvertContentFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testInvertFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileExercises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -62,6 +57,11 @@
     "JUnit.testGeometricFigureCase.calculateTriangleField.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateTriangleFieldFail.executor": "Run",
     "JUnit.testGeometricFigureCase.executor": "Run",
+    "JUnit.testInvertFile.executor": "Run",
+    "JUnit.testInvertFile.testIfFileHavePredicedString.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsInvertedProperly.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsInvertedWrong.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsSavedWrong.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -79,52 +79,48 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.testGeometricFigureCase.calculateSquareDiameterFail">
-    <configuration name="testGeometricFigureCase.calculateHexFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.testInvertFile">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Module_5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testInvertFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateHexFieldFail" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testInvertFile.testIfFileIsInvertedProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="METHOD_NAME" value="testIfFileIsInvertedProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGeometricFigureCase.calculateRectFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testInvertFile.testIfFileIsInvertedWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateRectFieldFail" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="METHOD_NAME" value="testIfFileIsInvertedWrong" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGeometricFigureCase.calculateSquareDiameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testInvertFile.testIfFileIsSavedWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateSquareDiameter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGeometricFigureCase.calculateSquareDiameterFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateSquareDiameterFail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGeometricFigureCase.calculateTriangleFieldFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateTriangleFieldFail" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="METHOD_NAME" value="testIfFileIsSavedWrong" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateSquareDiameterFail" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateSquareDiameter" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateHexFieldFail" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateTriangleFieldFail" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateRectFieldFail" />
+        <item itemvalue="JUnit.testInvertFile" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testInvertFile.testIfFileIsInvertedProperly" />
+        <item itemvalue="JUnit.testInvertFile.testIfFileIsInvertedWrong" />
+        <item itemvalue="JUnit.testInvertFile.testIfFileIsSavedWrong" />
       </list>
     </recent_temporary>
   </component>
@@ -164,12 +160,35 @@
       <workItem from="1717589689076" duration="601000" />
       <workItem from="1717614800694" duration="257000" />
       <workItem from="1717680496487" duration="16000" />
-      <workItem from="1717698046230" duration="4679000" />
+      <workItem from="1717698046230" duration="5081000" />
+      <workItem from="1717775518783" duration="17000" />
+      <workItem from="1717918269360" duration="9876000" />
     </task>
+    <task id="LOCAL-00001" summary="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
+      <option name="closed" value="true" />
+      <created>1717703010619</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717703010619</updated>
+    </task>
+    <task id="LOCAL-00002" summary="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
+      <option name="closed" value="true" />
+      <created>1717703085358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717703085358</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
