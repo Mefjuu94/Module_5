@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
-      <change afterPath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InvertContentFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testInvertFile.java" afterDir="false" />
+    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InvertContentFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InvertContentFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testInvertFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testInvertFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,8 @@
     "JUnit.testGeometricFigureCase.calculateTriangleFieldFail.executor": "Run",
     "JUnit.testGeometricFigureCase.executor": "Run",
     "JUnit.testInvertFile.executor": "Run",
+    "JUnit.testInvertFile.testCheckIfFileIsFile.executor": "Run",
+    "JUnit.testInvertFile.testCheckIfFileIsNotFile.executor": "Run",
     "JUnit.testInvertFile.testIfFileHavePredicedString.executor": "Run",
     "JUnit.testInvertFile.testIfFileIsInvertedProperly.executor": "Run",
     "JUnit.testInvertFile.testIfFileIsInvertedWrong.executor": "Run",
@@ -79,7 +79,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.testInvertFile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Module_5" />
@@ -96,6 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testInvertFile.testCheckIfFileIsFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="METHOD_NAME" value="testCheckIfFileIsFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testInvertFile.testCheckIfFileIsNotFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="METHOD_NAME" value="testCheckIfFileIsNotFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testInvertFile.testIfFileIsInvertedProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,33 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testInvertFile.testIfFileIsInvertedWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
-      <option name="METHOD_NAME" value="testIfFileIsInvertedWrong" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testInvertFile.testIfFileIsSavedWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
-      <option name="METHOD_NAME" value="testIfFileIsSavedWrong" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testInvertFile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testInvertFile.testCheckIfFileIsNotFile" />
+        <item itemvalue="JUnit.testInvertFile.testCheckIfFileIsFile" />
+        <item itemvalue="JUnit.testInvertFile" />
         <item itemvalue="JUnit.testInvertFile.testIfFileIsInvertedProperly" />
-        <item itemvalue="JUnit.testInvertFile.testIfFileIsInvertedWrong" />
-        <item itemvalue="JUnit.testInvertFile.testIfFileIsSavedWrong" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,10 @@
       <workItem from="1717680496487" duration="16000" />
       <workItem from="1717698046230" duration="5081000" />
       <workItem from="1717775518783" duration="17000" />
-      <workItem from="1717918269360" duration="9876000" />
+      <workItem from="1717918269360" duration="10366000" />
+      <workItem from="1718032257898" duration="13000" />
+      <workItem from="1718033068962" duration="1889000" />
+      <workItem from="1718039245980" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
       <option name="closed" value="true" />
@@ -180,7 +183,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717703085358</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted">
+      <option name="closed" value="true" />
+      <created>1717934736613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717934736613</updated>
+    </task>
+    <task id="LOCAL-00004" summary="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted">
+      <option name="closed" value="true" />
+      <created>1717934828972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717934828972</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +207,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method" />
-    <option name="LAST_COMMIT_MESSAGE" value="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method" />
+    <MESSAGE value="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted" />
+    <option name="LAST_COMMIT_MESSAGE" value="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

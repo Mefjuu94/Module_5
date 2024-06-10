@@ -1,4 +1,3 @@
-import java.io.File;
 import java.nio.file.Path;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,6 +19,9 @@ public class Main {
         System.out.println("-----------------------");
 
         CheckIfTwoFilesAreEqual c2Files = new CheckIfTwoFilesAreEqual();
+
+
+
         System.out.println(c2Files.areTextFilesEqual("test/testFolder/testFile1.txt","test/testFolder/testFile2notEqualTo1.txt")); // false
         System.out.println(c2Files.areTextFilesEqual("test/testFolder/testFile1.txt","test/testFolder/testFile3equalsto1.txt")); // true
 

@@ -7,9 +7,15 @@ import java.io.IOException;
 
 public class testInvertFile {
 
-    InvertContentFile testOcject = new InvertContentFile();
-    File createfileToTest = new File("test/testFolder/TestFolder1/testFiletoInvert.txt");
+    private InvertContentFile testOcject = new InvertContentFile();
+    private File createfileToTest = new File("test/testFolder/TestFolder1/testFiletoInvert.txt");
 
+    @Test
+    public void testCheckIfFileIsFile(){
+        testIfFileIsSavedProperly();
+
+        Assertions.assertTrue(testOcject.checkIfFileisFile(createfileToTest));
+    }
 
     @Test
     public void testIfFileIsSavedProperly() {
@@ -54,6 +60,15 @@ public class testInvertFile {
     // Bad Way
 
     @Test
+    public void testCheckIfFileIsNotFile(){
+        testIfFileIsSavedProperly();
+
+        File file = new File("test/testFolder/TestFolder1");
+
+        Assertions.assertFalse(testOcject.checkIfFileisFile(file));
+    }
+
+    @Test
     public void testIfFileIsSavedWrong() {
 
         ///create new file with certain string to invert
@@ -82,4 +97,5 @@ public class testInvertFile {
 
         Assertions.assertNotEquals(predictedNotInverted, testOcject.readFile(pathToInverted));
     }
+
 }
