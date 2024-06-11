@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class InvertContentFile implements Closeable, AutoCloseable {
+public class InvertContentFile{
 
     public boolean invertFile(String filepath) {
 
@@ -111,8 +111,4 @@ public class InvertContentFile implements Closeable, AutoCloseable {
         return file.exists();
     }
 
-    @Override
-    public void close() throws IOException {
-        System.out.println("resources are Closed");
-    }
 }

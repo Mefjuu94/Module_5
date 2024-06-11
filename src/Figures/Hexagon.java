@@ -1,5 +1,7 @@
 package Figures;
 
+import java.text.DecimalFormat;
+
 public class Hexagon implements GeometricFigure{
 
     double a;
@@ -9,15 +11,10 @@ public class Hexagon implements GeometricFigure{
     }
 
     @Override
-    public double calculateArea(double a, double b) {
-        return GeometricFigure.super.calculateArea(3 * Math.sqrt(3)/2 * Math.pow(a,2), 1);
+    public double calculateArea() {
+        DecimalFormat df = new DecimalFormat("0.00");
+        double resultNotRound = (3 * Math.sqrt(3)/2 * Math.pow(a,2));
+        return Math.round(resultNotRound * 100.0) / 100.0;
     }
 
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
 }

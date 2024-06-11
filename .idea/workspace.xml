@@ -4,16 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted">
+    <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="*fixed filds to private in test&#10;*added methods if Files exists and check if File isFile&#10;*added implements of Close, AutoCloseable interface to automatcly closed Writers...">
+      <change afterPath="$PROJECT_DIR$/test/testCheckTwoFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figures/Hexagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Hexagon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InvertContentFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InvertContentFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testInvertFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testInvertFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testFileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testFileExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testGeometricFigureCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGeometricFigureCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +51,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.testCheckTwoFiles.executor": "Coverage",
+    "JUnit.testCheckTwoFiles.testCheckTwoFilesAreEqual.executor": "Run",
+    "JUnit.testCheckTwoFiles.testCheckTwoFilesAreEqualNoFile.executor": "Run",
+    "JUnit.testCheckTwoFiles.testCheckTwoFilesAreNotEqual.executor": "Run",
+    "JUnit.testCheckTwoFiles.testCheckTwoFilesAreNotEqual1.executor": "Run",
     "JUnit.testFileExercises.executor": "Run",
     "JUnit.testFileExercises.testPrintDirectory.executor": "Run",
     "JUnit.testFileExercises.testPrintDirectoryMissingRecord.executor": "Run",
@@ -54,7 +69,7 @@
     "JUnit.testGeometricFigureCase.calculateSquareDiameterFail.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateTriangleField.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateTriangleFieldFail.executor": "Run",
-    "JUnit.testGeometricFigureCase.executor": "Run",
+    "JUnit.testGeometricFigureCase.executor": "Coverage",
     "JUnit.testInvertFile.executor": "Run",
     "JUnit.testInvertFile.testCheckIfFileIsFile.executor": "Run",
     "JUnit.testInvertFile.testCheckIfFileIsNotFile.executor": "Run",
@@ -79,48 +94,55 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Module_5" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testInvertFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.testGeometricFigureCase">
+    <configuration name="testFileExercises" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
+      <option name="MAIN_CLASS_NAME" value="testFileExercises" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testInvertFile.testCheckIfFileIsFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGeometricFigureCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
-      <option name="METHOD_NAME" value="testCheckIfFileIsFile" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeometricFigureCase.calculateHexField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateHexField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testInvertFile.testCheckIfFileIsNotFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGeometricFigureCase.calculateRectField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
-      <option name="METHOD_NAME" value="testCheckIfFileIsNotFile" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateRectField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testInvertFile.testIfFileIsInvertedProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGeometricFigureCase.calculateTriangleField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testInvertFile" />
-      <option name="METHOD_NAME" value="testIfFileIsInvertedProperly" />
+      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
+      <option name="METHOD_NAME" value="calculateTriangleField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.testInvertFile.testCheckIfFileIsNotFile" />
-        <item itemvalue="JUnit.testInvertFile.testCheckIfFileIsFile" />
-        <item itemvalue="JUnit.testInvertFile" />
-        <item itemvalue="JUnit.testInvertFile.testIfFileIsInvertedProperly" />
+        <item itemvalue="JUnit.testGeometricFigureCase" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateHexField" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateRectField" />
+        <item itemvalue="JUnit.testGeometricFigureCase.calculateTriangleField" />
+        <item itemvalue="JUnit.testFileExercises" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +187,9 @@
       <workItem from="1717918269360" duration="10366000" />
       <workItem from="1718032257898" duration="13000" />
       <workItem from="1718033068962" duration="1889000" />
-      <workItem from="1718039245980" duration="2625000" />
+      <workItem from="1718039245980" duration="3211000" />
+      <workItem from="1718046746161" duration="25000" />
+      <workItem from="1718117559357" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
       <option name="closed" value="true" />
@@ -199,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717934828972</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="*fixed filds to private in test&#10;*added methods if Files exists and check if File isFile&#10;*added implements of Close, AutoCloseable interface to automatcly closed Writers...">
+      <option name="closed" value="true" />
+      <created>1718044688837</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718044688837</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,13 +240,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method" />
     <MESSAGE value="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted" />
-    <option name="LAST_COMMIT_MESSAGE" value="*exercise 5&#10;- method who checking if two files are equals + files to it&#10;&quot;testFile2.txt&quot;, &quot;testFile3equalsto1.txt&quot;&#10;&quot;testFile2notEqualTo1&quot;,&#10;*exercise 6 &#10;- added 2 methods:&#10;-- invert content of file and save it returns true/false&#10;-- read file and return content as String&#10;-- delete files from certain path (to use by tests before create new file)&#10;*Bonus Exercise&#10;- added test for exercise 6 if content are equal as predicted" />
+    <MESSAGE value="*fixed filds to private in test&#10;*added methods if Files exists and check if File isFile&#10;*added implements of Close, AutoCloseable interface to automatcly closed Writers..." />
+    <option name="LAST_COMMIT_MESSAGE" value="*fixed filds to private in test&#10;*added methods if Files exists and check if File isFile&#10;*added implements of Close, AutoCloseable interface to automatcly closed Writers..." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/test/testFileExercises.java" line="32">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/test/testFileExercises.java" line="19">
         <watch expression="((testFileExercises)this).testObject" language="JAVA" custom="testFileExercises" />
       </inline-watch>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Module_5$testCheckTwoFiles.ic" NAME="testCheckTwoFiles Coverage Results" MODIFIED="1718120661845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testFileExercises.ic" NAME="testFileExercises Coverage Results" MODIFIED="1718121056287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testGeometricFigureCase.ic" NAME="testGeometricFigureCase Coverage Results" MODIFIED="1718122255313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
