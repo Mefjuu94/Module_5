@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87f3157e-e273-48e4-8f4b-463a554323fb" name="Changes" comment="*fixed filds to private in test&#10;*added methods if Files exists and check if File isFile&#10;*added implements of Close, AutoCloseable interface to automatcly closed Writers...">
-      <change afterPath="$PROJECT_DIR$/test/testCheckTwoFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckIfTwoFilesAreEqual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/GeometricFigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figures/Hexagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Hexagon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figures/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Files/demo" beforeDir="false" afterPath="$PROJECT_DIR$/src/Files/demo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InvertContentFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InvertContentFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testCheckTwoFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testCheckTwoFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/testFileExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testFileExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testGeometricFigureCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGeometricFigureCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testInvertFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testInvertFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +49,19 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in Module_5.executor": "Coverage",
     "JUnit.testCheckTwoFiles.executor": "Coverage",
     "JUnit.testCheckTwoFiles.testCheckTwoFilesAreEqual.executor": "Run",
     "JUnit.testCheckTwoFiles.testCheckTwoFilesAreEqualNoFile.executor": "Run",
     "JUnit.testCheckTwoFiles.testCheckTwoFilesAreNotEqual.executor": "Run",
     "JUnit.testCheckTwoFiles.testCheckTwoFilesAreNotEqual1.executor": "Run",
+    "JUnit.testCheckTwoFiles.testCheckTwoFilesAreNotEqualNull.executor": "Run",
     "JUnit.testFileExercises.executor": "Run",
     "JUnit.testFileExercises.testPrintDirectory.executor": "Run",
     "JUnit.testFileExercises.testPrintDirectoryMissingRecord.executor": "Run",
-    "JUnit.testFileExercises.testPrintDirectoryNoOrder.executor": "Debug",
+    "JUnit.testFileExercises.testPrintDirectoryNoOrder.executor": "Run",
     "JUnit.testFileExercises.testReadFromFile.executor": "Run",
+    "JUnit.testFileExercises.testWriteUserInputToFile.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateHexField.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateHexFieldFail.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateRectField.executor": "Run",
@@ -70,12 +71,16 @@
     "JUnit.testGeometricFigureCase.calculateTriangleField.executor": "Run",
     "JUnit.testGeometricFigureCase.calculateTriangleFieldFail.executor": "Run",
     "JUnit.testGeometricFigureCase.executor": "Coverage",
-    "JUnit.testInvertFile.executor": "Run",
+    "JUnit.testInvertFile.executor": "Coverage",
     "JUnit.testInvertFile.testCheckIfFileIsFile.executor": "Run",
     "JUnit.testInvertFile.testCheckIfFileIsNotFile.executor": "Run",
     "JUnit.testInvertFile.testIfFileHavePredicedString.executor": "Run",
     "JUnit.testInvertFile.testIfFileIsInvertedProperly.executor": "Run",
     "JUnit.testInvertFile.testIfFileIsInvertedWrong.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsInvertedWrongNameOfFile.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsSavedFail.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsSavedNull.executor": "Run",
+    "JUnit.testInvertFile.testIfFileIsSavedProperly.executor": "Run",
     "JUnit.testInvertFile.testIfFileIsSavedWrong.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -99,7 +104,31 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testGeometricFigureCase">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Module_5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Module_5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCheckTwoFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testCheckTwoFiles" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testFileExercises" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,40 +138,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGeometricFigureCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testFileExercises.testWriteUserInputToFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module_5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGeometricFigureCase.calculateHexField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateHexField" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGeometricFigureCase.calculateRectField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateRectField" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGeometricFigureCase.calculateTriangleField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module_5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGeometricFigureCase" />
-      <option name="METHOD_NAME" value="calculateTriangleField" />
+      <option name="MAIN_CLASS_NAME" value="testFileExercises" />
+      <option name="METHOD_NAME" value="testWriteUserInputToFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testGeometricFigureCase" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateHexField" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateRectField" />
-        <item itemvalue="JUnit.testGeometricFigureCase.calculateTriangleField" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testFileExercises.testWriteUserInputToFile" />
         <item itemvalue="JUnit.testFileExercises" />
+        <item itemvalue="JUnit.All in Module_5" />
+        <item itemvalue="JUnit.testCheckTwoFiles" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +190,9 @@
       <workItem from="1718039245980" duration="3211000" />
       <workItem from="1718046746161" duration="25000" />
       <workItem from="1718117559357" duration="4395000" />
+      <workItem from="1718199400650" duration="9000" />
+      <workItem from="1718378372539" duration="1072000" />
+      <workItem from="1718384838287" duration="2425000" />
     </task>
     <task id="LOCAL-00001" summary="exercises 1,2,3,4 completed with test&#10;*exercise 1&#10;- list all files in directiory&#10;*exercise 2&#10;- making file with self input with booliean flag&#10;- reading from file with specific filename&#10;- bonus (after 4th word make new line when save new file)&#10;*exercise 3&#10;-Geometric Figure Interface&#10;- Hexagon Class&#10;- Rectangle Class&#10;- Trriangle Class&#10;*exercise 4&#10;- Square Class with Diameter calculate Method">
       <option name="closed" value="true" />
@@ -251,8 +254,10 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Module_5$testCheckTwoFiles.ic" NAME="testCheckTwoFiles Coverage Results" MODIFIED="1718120661845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/Module_5$testFileExercises.ic" NAME="testFileExercises Coverage Results" MODIFIED="1718121056287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/Module_5$testGeometricFigureCase.ic" NAME="testGeometricFigureCase Coverage Results" MODIFIED="1718122255313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testCheckTwoFiles.ic" NAME="testCheckTwoFiles Coverage Results" MODIFIED="1718386425866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testGeometricFigureCase.ic" NAME="testGeometricFigureCase Coverage Results" MODIFIED="1718385495324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testFileExercises.ic" NAME="testFileExercises Coverage Results" MODIFIED="1718386629738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$All_in_Module_5.ic" NAME="All in Module_5 Coverage Results" MODIFIED="1718386598650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Module_5$testInvertFile.ic" NAME="testInvertFile Coverage Results" MODIFIED="1718386260515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

@@ -10,12 +10,6 @@ public class testInvertFile {
     private InvertContentFile testOcject = new InvertContentFile();
     private File createfileToTest = new File("test/testFolder/TestFolder1/testFiletoInvert.txt");
 
-    @Test
-    public void testCheckIfFileIsFile(){
-        testIfFileIsSavedProperly();
-
-        Assertions.assertTrue(testOcject.checkIfFileisFile(createfileToTest));
-    }
 
     @Test
     public void testIfFileIsSavedProperly() {
@@ -60,13 +54,11 @@ public class testInvertFile {
     // Bad Way
 
     @Test
-    public void testCheckIfFileIsNotFile(){
-        testIfFileIsSavedProperly();
+    public void testIfFileIsSavedFail() {
 
-        File file = new File("test/testFolder/TestFolder1");
-
-        Assertions.assertFalse(testOcject.checkIfFileisFile(file));
+        Assertions.assertFalse(testOcject.invertFile(""));
     }
+
 
     @Test
     public void testIfFileIsSavedWrong() {
@@ -94,6 +86,19 @@ public class testInvertFile {
         testIfFileIsInvertedProperly();
 
         String pathToInverted = createfileToTest.getParent() + "\\inverted_" + createfileToTest.getName();
+
+        Assertions.assertNotEquals(predictedNotInverted, testOcject.readFile(pathToInverted));
+    }
+
+    @Test
+    public void testIfFileIsInvertedWrongNameOfFile() {
+
+        String predictedNotInverted = "1a 2bc 3de 4ef";
+
+        //create file before test
+        testIfFileIsInvertedProperly();
+
+        String pathToInverted = "src/abc.txt";
 
         Assertions.assertNotEquals(predictedNotInverted, testOcject.readFile(pathToInverted));
     }

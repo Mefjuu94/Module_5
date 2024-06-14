@@ -1,4 +1,5 @@
 import java.nio.file.Path;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -29,6 +30,10 @@ public class Main {
 
         InvertContentFile icf = new InvertContentFile();
         System.out.println(icf.invertFile(filepath));
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Name of your file:");
+        fe.writeUserInputToFile(scanner);
 
 //        System.out.println("*********delete files to see if test going well**************");
 //        icf.deleteFiles("test/testFolder/TestFolder1/");

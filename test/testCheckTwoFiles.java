@@ -16,10 +16,6 @@ public class testCheckTwoFiles {
         Assertions.assertTrue(testObject.areTextFilesEqual(file1,file3EqualTo1));
     }
 
-    @Test
-    public void testCheckTwoFilesAreNotEqual1(){
-        Assertions.assertFalse(testObject.areTextFilesEqual(null,file2noEqual));
-    }
 
     //not happy
     @Test
@@ -30,5 +26,9 @@ public class testCheckTwoFiles {
     @Test
     public void testCheckTwoFilesAreEqualNoFile(){
         Assertions.assertFalse(testObject.areTextFilesEqual(file1," "));
+    }
+    @Test
+    public void testCheckTwoFilesAreNotEqualNull(){
+        Assertions.assertFalse(testObject.areTextFilesEqual(null,file2noEqual));
     }
 }

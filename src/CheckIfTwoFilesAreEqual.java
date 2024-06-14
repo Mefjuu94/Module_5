@@ -9,6 +9,9 @@ public class CheckIfTwoFilesAreEqual {
 
         String text1 = "";
         String text2 = "";
+        if (filePath1 == null || filePath2 == null){
+            return false;
+        }
         Boolean file1 = new File(filePath1).exists() && new File(filePath1).isFile();
         Boolean file2 = new File(filePath2).exists() && new File(filePath2).isFile();
 

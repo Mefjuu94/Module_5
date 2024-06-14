@@ -9,10 +9,10 @@ public class FileExercises {
 
     public List<String> scanDirectoryForFiles(Path path) {
 
-        File file = new File(String.valueOf(path));
-        String[] list = Objects.requireNonNull(file.list());
+        String[] list = new File(String.valueOf(path)).list();
         List<String> listOfFiles = new ArrayList<>();
 
+        assert list != null;
         for (String s : list) {
             File fileFromList = new File(path + s);
             if (fileFromList.isFile()) {
@@ -48,44 +48,38 @@ public class FileExercises {
         return List.of(list);
     }
 
-    public boolean writeUserInputToFile() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Name of your file:");
+    public boolean writeUserInputToFile(Scanner scanner) {
         String fileName = scanner.next();
 
-        System.out.println("Write content to your file! -> '/x' to end");
+        if (!scanner.toString().isEmpty()) {
+            File myFile = new File(path + "\\" + fileName);
 
-        File myFile = new File(path + "\\" + fileName);
+            System.out.println("Write content to your file! -> '/x' to end");
 
+            try (FileWriter writer = new FileWriter(myFile);
+                 BufferedWriter bw = new BufferedWriter(writer)) {
 
-        try {
-            myFile.createNewFile();
-            FileWriter writer = new FileWriter(myFile);
-            BufferedWriter bw = new BufferedWriter(writer);
+                String content = "";
+                StringBuilder divideContent = new StringBuilder();
 
-            String content = "";
-            StringBuilder divideContent = new StringBuilder();
+                while (true) {
+                    content = scanner.nextLine();
+                    if (content.equalsIgnoreCase("/x")) { // to end writing content
+                        bw.write(splitContent(String.valueOf(divideContent)));
+                        break;
+                    }
 
-            while (true) {
-                content = scanner.nextLine();
-                if (!content.isEmpty()) { // to avoid empty saces and New lines
-                    divideContent.append(content).append(" ");
+                    if (!content.isEmpty()) { // to avoid empty saces and New lines
+                        divideContent.append(content).append(" ");
+                    }
                 }
-
-                if (content.equalsIgnoreCase("/x")) { // to end writing content
-                    bw.write(splitContent(String.valueOf(divideContent)));
-                    break;
-                }
+                return true;
+            } catch (IOException e) {
+                System.out.println("something going wrong");
+                e.printStackTrace();
+                return false;
             }
-
-            bw.flush(); // empty bufor bufferedReader
-            bw.close(); // close bufor
-
-            writer.close(); // close writter
-            return true;
-        } catch (IOException e) {
-            System.out.println("something going wrong");
-            e.printStackTrace();
+        }else {
             return false;
         }
     }

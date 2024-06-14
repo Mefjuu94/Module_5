@@ -20,7 +20,6 @@ public class testFileExercises {
         Assertions.assertEquals(predicted,testObject.readFromFile(path,"testFile1.txt"));
     }
 
-
     //bad
     @Test
     public void testPrintDirectoryNoOrder(){
